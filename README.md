@@ -35,4 +35,4 @@ python Mini_Ransomware_Demostracion.py
 
 5. Introduce la clave simétrica generada para descifrar y recuperar tus datos, simulando el funcionamiento de un ransomware de manera educativa y controlada
 
-<img width="855" height="137" alt="image" src="https://github.com/user-attachments/assets/da40c584-23d9-4490-9ef4-4241da1ee5da" />
+<img width="819" height="82" alt="image" src="https://github.com/user-attachments/assets/39bda288-705c-48d2-9e45-8cd961ba8a42" />
