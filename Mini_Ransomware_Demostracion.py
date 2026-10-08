@@ -24,18 +24,18 @@ Este programa:
 
 
 
-# 0.Importar librerias necesarias
+# 0.Importo las librerias necesarias
 from cryptography.fernet import Fernet
 
 
 
-# 1.Mensaje secreto 
+# 1.Guardo en una variable el mensaje secreto que introduce el usuario por consola
 print("")
 mensaje_secreto = input("Guarda tu información secreta aquí --> ")
 
 
 
-# 2.Convertir mensaje secreto en bytes
+# 2.Convierto su mensaje secreto en bytes para poder operar con el
 mensaje_secreto_bytes = mensaje_secreto.encode()
 print("")
 print("Mensaje secreto en bytes:")
@@ -43,7 +43,7 @@ print(mensaje_secreto_bytes)
 
 
 
-# 3.Crear clave simétrica de cifrado/descifrado
+# 3.Creo una clave simétrica de cifrado/descifrado
 clave = Fernet.generate_key()
 print("")
 print("Clave del cifrado simétrico:")
@@ -51,12 +51,12 @@ print(clave)
 
 
 
-# 4.Crear objeto encriptador/desencriptador
+# 4.Creo un objeto encriptador/desencriptador
 cipher = Fernet(clave)
 
 
 
-# 5.Cifrar mensaje
+# 5.Cifro el mensaje
 mensaje_cifrado = cipher.encrypt(mensaje_secreto_bytes)
 print("")
 print("Mensaje cifrado:")
@@ -64,7 +64,7 @@ print(mensaje_cifrado)
 
 
 
-# 6.Descifrar  mensaje
+# 6.Descifro el  mensaje
 print("")
 introducir_clave = input("Introduce la clave para descifrar el mensaje y recuperar tus datos --> ") # Esta línea no es necesaria para el funcionamiento del código. Es solo demostrativa para entender como funciona un ransomware.
 mensaje_descifrado = cipher.decrypt(mensaje_cifrado)
